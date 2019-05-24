@@ -8,7 +8,7 @@ function choice() {
 
   axios
     .get(
-      "http://api.openweathermap.org/data/2.5/weather?q=" +
+      "https://api.openweathermap.org/data/2.5/weather?q=" +
         (villeInput || "Paris") +
         "&units=metric&APPID=e563b12ca592299ebf3f91a4386d3cbc"
     )
@@ -23,7 +23,7 @@ function choice() {
 
       icone.setAttribute(
         "src",
-        "http://openweathermap.org/img/w/" + icon + ".png"
+        "https://openweathermap.org/img/w/" + icon + ".png"
       );
       let afficher = (document.querySelector("#temp").innerHTML =
         Math.floor(temps) + "°");
@@ -34,7 +34,7 @@ function choice() {
       //   deuxieme axios
       axios
         .get(
-          "http://api.apixu.com/v1/current.json?key=2f6f8fe72897460e83b92345192305&q=" +
+          "https://api.apixu.com/v1/current.json?key=2f6f8fe72897460e83b92345192305&q=" +
             ville
         )
         .then(function(result1) {
