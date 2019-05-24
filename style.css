@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#carac div {
+  width: 80px;
+  height: 50px;
+  border: solid black 3px;
+}
+
+section #info {
+  height: 300px;
+  width: 200px;
+}
+/*# sourceMappingURL=style.css.map */

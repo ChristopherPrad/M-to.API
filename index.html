@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Requette API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Météo</h1>
+      <div id="heure"></div>
+      <div id="fuseaux"></div>
+      <input id="recherche" type="text" />
+      <button onclick="choice()" id="bouton">Rechercher</button>
+      <div id="choixville"></div>
+      <section id="carac">
+        <h1>Température</h1>
+        <div id="temp"></div>
+        <h1>Humidité</h1>
+        <div id="hum"></div>
+        <h1>Ville ou Pays</h1>
+        <div id="lieu"></div>
+        <h1>Temps</h1>
+        <div id="temps"></div>
+        <h1>Icone</h1>
+        <div id="icon"><img id="image" src="" /></div>
+        <div id="info"></div>
+      </section>
+
+      <!-- <div id="info"></div>-->
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
